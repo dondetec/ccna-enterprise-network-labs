@@ -1,0 +1,53 @@
+! =====================================================
+! Lab 01 - VLANs and 802.1Q Trunking
+! Device: SW1
+! Platform: Cisco 2960
+! Sanitized lab configuration
+! =====================================================
+
+hostname SW1
+
+no ip domain-lookup
+
+spanning-tree mode pvst
+spanning-tree extend system-id
+
+
+! PC1 - VLAN 10 USERS
+
+interface FastEthernet0/1
+ description PC1-USERS
+ switchport access vlan 10
+ switchport mode access
+
+
+! PC2 - VLAN 20 ADMIN
+
+interface FastEthernet0/2
+ description PC2-ADMIN
+ switchport access vlan 20
+ switchport mode access
+
+
+! 802.1Q trunk to SW2
+
+interface GigabitEthernet0/1
+ description TRUNK-TO-SW2
+ switchport trunk allowed vlan 10,20,99
+ switchport mode trunk
+
+
+! Default SVI not used in this Layer 2 lab
+
+interface Vlan1
+ no ip address
+ shutdown
+
+
+! VLAN database
+!
+! VLAN 10 - USERS
+! VLAN 20 - ADMIN
+! VLAN 99 - MANAGEMENT
+
+end
