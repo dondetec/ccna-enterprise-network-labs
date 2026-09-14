@@ -21,6 +21,8 @@ A troubleshooting scenario was also performed by intentionally removing VLAN 10 
 
 ## Topology
 
+![VLAN and 802.1Q Trunking Topology](topology/vlan-topology.png)
+
 ```text
 PC1                         PC3
 192.168.10.10               192.168.10.20
