@@ -1,0 +1,38 @@
+! =====================================================
+! Lab 02 - Inter-VLAN Routing (Router-on-a-Stick)
+! Device: R1
+! Platform: Cisco 2911
+! =====================================================
+
+hostname R1
+
+!
+! Physical interface connected to SW1 trunk
+!
+interface GigabitEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+ no shutdown
+
+!
+! VLAN 10 - USERS Default Gateway
+!
+interface GigabitEthernet0/0.10
+ encapsulation dot1Q 10
+ ip address 192.168.10.1 255.255.255.0
+
+!
+! VLAN 20 - ADMIN Default Gateway
+!
+interface GigabitEthernet0/0.20
+ encapsulation dot1Q 20
+ ip address 192.168.20.1 255.255.255.0
+
+!
+! Layer 3 forwarding
+!
+ip cef
+ip classless
+
+end
