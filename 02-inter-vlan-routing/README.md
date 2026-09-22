@@ -22,6 +22,9 @@ A troubleshooting scenario was also performed by intentionally breaking the VLAN
 
 ## Topology
 
+![Inter-VLAN Routing Router-on-a-Stick Topology](topology/inter-vlan-routing-topology.png)
+The Topology uses on router, two layer 2 switchtes, and four end devices. 
+
 ```text
                          R1
                        Gi0/0
