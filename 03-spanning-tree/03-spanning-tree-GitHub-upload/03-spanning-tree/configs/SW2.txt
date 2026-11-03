@@ -1,0 +1,3 @@
+! Verified STP mode excerpt for SW2 (not full running-config)
+spanning-tree mode rapid-pvst
+! Other interface settings must be exported from Packet Tracer if needed.

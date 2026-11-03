@@ -1,0 +1,4 @@
+! Verified STP-related configuration excerpt (not full running-config)
+spanning-tree mode rapid-pvst
+spanning-tree vlan 1 priority 4096
+! MLS1 Gi0/1 -> SW1 Gi0/1; Gi0/2 -> SW2 Gi0/1
