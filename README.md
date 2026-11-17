@@ -34,10 +34,10 @@ The goal of this repository is to strengthen and demonstrate practical skills in
 
 | Lab | Topic | Status |
 |---|---|---|
-| 01 | VLANs & 802.1Q Trunking | 🚧 In Progress |
-| 02 | Inter-VLAN Routing | ⏳ Planned |
-| 03 | Spanning Tree Protocol | ⏳ Planned |
-| 04 | EtherChannel / LACP | ⏳ Planned |
+| 01 | VLANs & 802.1Q Trunking | COMPLETED |
+| 02 | Inter-VLAN Routing | COMPLETED |
+| 03 | Spanning Tree Protocol | COMPLETED |
+| 04 | EtherChannel / LACP | COMPLETED |
 | 05 | DHCP & Network Services | ⏳ Planned |
 | 06 | Static Routing | ⏳ Planned |
 | 07 | OSPF | ⏳ Planned |
