@@ -1,0 +1,8 @@
+! Lab 04 — SW1 configuration excerpt (not a full running-config export)
+interface range FastEthernet0/23 - 24
+ channel-group 1 mode active
+exit
+interface Port-channel1
+ switchport mode trunk
+exit
+! Verify with: show etherchannel summary; show interfaces trunk
